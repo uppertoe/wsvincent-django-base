@@ -27,10 +27,7 @@ urlpatterns = [
     # Markdownx
     path('markdownx/', include('markdownx.urls')),
     # Local apps
-    path('tickets/', include('tickets.urls')),
-    path('', include('pages.urls')),
-    path('', include('reactions.urls')),
-    path('peer-review/', include('review.urls')),
+    #path('', include('pages.urls')),
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )
